@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import App from '../App';
+import App from '../../App';
 import Login from './Login';
 import LoginScreen from './Loginscreen';
 import UploadScreen from './UploadScreen';
