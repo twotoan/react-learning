@@ -1,0 +1,10 @@
+.menu {
+  a {
+    transition: all, .5s, ease-in-out;
+    &:hover {
+      background: #1779ba;
+      color: white;
+      transition: all, .5s, ease-in-out;
+    }
+  }
+}

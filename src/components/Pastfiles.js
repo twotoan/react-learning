@@ -26,7 +26,7 @@ export default class PastFiles extends Component {
             }
             else{
                 // console.log("response from server",JSON.stringify(res.body));
-                if(res.body.code=="200"){
+                if(res.body.code==="200"){
                     var filestobeDisplayed = res.body.result;
                     var filenamesDiv=[];
                     for(var i in filestobeDisplayed){
@@ -64,7 +64,7 @@ export default class PastFiles extends Component {
         }
         else{
             for(var i in filesToBePrinted){
-                if(filesToBePrinted[i].name == event.target.value){
+                if(filesToBePrinted[i].name === event.target.value){
                     filesToBePrinted.splice(i,1)
                 }
             }
