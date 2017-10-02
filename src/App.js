@@ -4,7 +4,9 @@ import './css/site.min.css';
 class App extends Component {
   render() {
     return (
-      <Home></Home>
+        <div>
+            <Home></Home>
+        </div>
     );
   }
 }
@@ -29,7 +31,7 @@ class AppHeader extends Component {
     render() {
         return (
             <header>
-                <div class="row">
+                <div className="row">
                     <div className="small-12 column">
                         Test123
                     </div>
