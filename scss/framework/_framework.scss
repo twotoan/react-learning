@@ -1,0 +1,59 @@
+// =================================================================================================================== /
+// Import the foundation utilities from node
+@import '../../node_modules/foundation-sites/scss/util/util';
+// =================================================================================================================== /
+
+// =================================================================================================================== /
+// Implicitly defined overwrites for Foundation Framework
+// ONLY INCLUDE VARIABLES YOU INTEND TO OVERWRITE FROM THE NODE FILES
+// =================================================================================================================== /
+
+// Row Width
+$global-width: rem-calc(1584);
+
+// =================================================================================================================== /
+// Only import foundation modules you want to use - we can do without the bloat!
+@import '../../node_modules/foundation-sites/scss/foundation.scss';
+
+
+@include foundation-global-styles;
+@include foundation-grid;
+// This is to manually import the xlarge grid from the settings directory
+//@import "settings/xlarge";
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+//@include foundation-accordion;
+//@include foundation-accordion-menu;
+//@include foundation-badge;
+//@include foundation-breadcrumbs;
+//@include foundation-button-group;
+//@include foundation-callout;
+//@include foundation-card;
+//@include foundation-card;
+//@include foundation-close-button;
+@include foundation-menu;
+//@include foundation-menu-icon;
+//@include foundation-drilldown-menu;
+//@include foundation-dropdown;
+//@include foundation-dropdown-menu;
+//@include foundation-responsive-embed;
+//@include foundation-label;
+//@include foundation-media-object;
+@include foundation-off-canvas;
+//@include foundation-orbit;
+//@include foundation-pagination;
+//@include foundation-progress-bar;
+//@include foundation-slider;
+//@include foundation-sticky;
+//@include foundation-reveal;
+//@include foundation-switch;
+//@include foundation-table;
+//@include foundation-tabs;
+//@include foundation-thumbnail;
+//@include foundation-title-bar;
+//@include foundation-tooltip;
+//@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// =================================================================================================================== /

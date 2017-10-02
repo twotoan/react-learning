@@ -1,23 +1,64 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/site.min.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Home></Home>
     );
   }
 }
 
+class Home extends Component {
+    render() {
+        return ([
+            <div>
+                <AppHeader />
+                <div className="row">
+                    <div className="small-12 column">
+                        <AppHome />
+                    </div>
+                </div>
+                <AppFooter />
+            </div>
+        ]);
+    }
+}
 
+class AppHeader extends Component {
+    render() {
+        return (
+            <header>
+                <div class="row">
+                    <div className="small-12 column">
+                        Test123
+                    </div>
+                </div>
+            </header>
+        );
+    }
+}
+
+class AppFooter extends Component {
+    render() {
+        return (
+          <footer>
+              <div className="row">
+                  <div className="small-12 column">
+                      Test456
+                  </div>
+              </div>
+          </footer>
+        );
+    }
+}
+
+class AppHome extends Component {
+    render() {
+        return (
+            <p>Hello World</p>
+        );
+    }
+}
 
 export default App;

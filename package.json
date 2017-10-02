@@ -7,14 +7,15 @@
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14",
     "node-sass": "^4.5.3",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "foundation-sites": "^6.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "build-css": "node-sass   --output-style compressed   --include-path scss scss/site.scss   src/css/site.css",
+    "build-css": "node-sass   --output-style compressed   --include-path scss scss/site.scss   src/css/site.min.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   }
 }
