@@ -9,7 +9,7 @@ class App extends Component {
         this.state = {draweropen: false,currentScreen:[]};
     }
     componentDidMount(){
-        var currentScreen=[];
+        let currentScreen=[];
         currentScreen.push(<UploadScreen appContext={this.props.appContext} role={this.props.role}/>);
         this.setState({currentScreen})
     }
@@ -58,10 +58,7 @@ class App extends Component {
                         <li>
                             <div>
                                 User Profile
-                                <a href="#"><i
-                                    className="material-icons drawerclosebutton"
-                                    styles={{ top:10,}}
-                                    onClick={(event) => this.toggleDrawer(event)}
+                                <a href="#"><i className="fa fa-close" onClick={(event) => this.toggleDrawer(event)}
                                 >clear</i></a>
                             </div>
                         </li>

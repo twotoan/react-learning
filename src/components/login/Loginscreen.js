@@ -9,10 +9,10 @@ class Loginscreen extends Component {
         loginButtons.push(
             <div>
                 <div>
-                    <button label={"Register as Student"} primary={true} style={style} onClick={(event) => this.handleClick(event,'student')}/>
+                    <button label={"Register as Student"}  onClick={(event) => this.handleClick(event,'student')}/>
                 </div>
                 <div>
-                    <button label={"Register as Teacher"} primary={true} style={style} onClick={(event) => this.handleClick(event,'teacher')}/>
+                    <button label={"Register as Teacher"}  onClick={(event) => this.handleClick(event,'teacher')}/>
                 </div>
 
             </div>
@@ -29,7 +29,7 @@ class Loginscreen extends Component {
         }
     }
     componentWillMount(){
-        var loginscreen=[];
+        let loginscreen=[];
         loginscreen.push(<Login parentContext={this} appContext={this.props.appContext}/>);
         var loginmessage = "Not registered yet, Register Now";
         this.setState({
@@ -41,13 +41,13 @@ class Loginscreen extends Component {
         console.log("event",userRole);
         var loginmessage;
         if(this.state.isLogin){
-            var loginscreen=[];
+            let loginscreen=[];
             loginscreen.push(<Register parentContext={this} appContext={this.props.appContext} role={userRole}/>);
             loginmessage = "Already registered.Go to Login";
             var loginButtons=[];
             loginButtons.push(
                 <div>
-                    <button label={"Login"} primary={true} style={style} onClick={(event) => this.handleClick(event,userRole)}/>
+                    <button label={"Login"}  onClick={(event) => this.handleClick(event,userRole)}/>
                 </div>
             )
             this.setState({
@@ -62,10 +62,10 @@ class Loginscreen extends Component {
             loginButtons.push(
                 <div>
                     <div>
-                        <button label={"Register as Student"} primary={true} style={style} onClick={(event) => this.handleClick(event,'student')}/>
+                        <button label={"Register as Student"}  onClick={(event) => this.handleClick(event,'student')}/>
                     </div>
                     <div>
-                        <button label={"Register as Teacher"} primary={true} style={style} onClick={(event) => this.handleClick(event,'teacher')}/>
+                        <button label={"Register as Teacher"}  onClick={(event) => this.handleClick(event,'teacher')}/>
                     </div>
                 </div>
             )
@@ -91,9 +91,5 @@ class Loginscreen extends Component {
         );
     }
 }
-
-const style = {
-    margin: 15,
-};
 
 export default Loginscreen;

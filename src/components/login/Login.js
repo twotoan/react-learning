@@ -4,6 +4,7 @@ import UploadScreen from './UploadScreen';
 import UploadPage from './UploadPage';
 let apiBaseUrl = "http://localhost:4000/api/";
 
+
 class Login extends Component {
     constructor(props){
         super(props);
@@ -31,7 +32,7 @@ class Login extends Component {
                         />
                         <p id="collegePassword">Enter your Password</p>
                         <br/>
-                        <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                        <button label="Submit" onClick={(event) => this.handleClick(event)}/>
                     </div>
                 </div>
 
@@ -49,24 +50,21 @@ class Login extends Component {
         if(this.props.role !== undefined){
             if(this.props.role === 'student'){
                 console.log("in student componentWillMount");
-                var localloginComponent=[];
+                let localloginComponent=[];
                 localloginComponent.push(
 
                         <div>
                             <input
-                                hintText="Enter your College Rollno"
-                                floatingLabelText="Student Id"
+                                type="text"
                                 onChange = {(event,newValue) => this.setState({username:newValue})}
                             />
                             <br/>
                             <input
                                 type="password"
-                                hintText="Enter your Password"
-                                floatingLabelText="Password"
                                 onChange = {(event,newValue) => this.setState({password:newValue})}
                             />
                             <br/>
-                            <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                            <button label="Submit" onClick={(event) => this.handleClick(event)}/>
                         </div>
 
                 )
@@ -74,24 +72,22 @@ class Login extends Component {
             }
             else if(this.props.role === 'teacher'){
                 console.log("in teacher componentWillMount");
-                var localloginComponent=[];
+                let localloginComponent=[];
                 localloginComponent.push(
 
                         <div>
                             <input
-                                hintText="Enter your College Rollno"
-                                floatingLabelText="Teacher Id"
+                                placeholder="Enter your College Rollno"
                                 onChange = {(event,newValue) => this.setState({username:newValue})}
                             />
                             <br/>
                             <input
                                 type="password"
-                                hintText="Enter your Password"
-                                floatingLabelText="Password"
+                                placeholder="Enter your Password"
                                 onChange = {(event,newValue) => this.setState({password:newValue})}
                             />
                             <br/>
-                            <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                            <button label="Submit" onClick={(event) => this.handleClick(event)}/>
                         </div>
 
                 )
@@ -111,7 +107,7 @@ class Login extends Component {
                 console.log(response);
                 if(response.data.code === 200){
                     console.log("Login successfull");
-                    var uploadScreen=[];
+                    let uploadScreen=[];
                     uploadScreen.push(<UploadPage appContext={self.props.appContext} role={self.state.loginRole}/>)
                     self.props.appContext.setState({loginPage:[],uploadScreen:uploadScreen})
                 }
@@ -131,50 +127,46 @@ class Login extends Component {
     handleMenuChange(value){
         console.log("menuvalue",value);
         var loginRole;
+        let localloginComponent=[];
+
         if(value === 1){
-            var localloginComponent=[];
             loginRole='student';
             localloginComponent.push(
 
                     <div>
                         <input
-                            hintText="Enter your College Rollno"
-                            floatingLabelText="Student Id"
+                            placeholder="Enter your College Roll no."
                             onChange = {(event,newValue) => this.setState({username:newValue})}
                         />
                         <br/>
                         <input
                             type="password"
-                            hintText="Enter your Password"
-                            floatingLabelText="Password"
+                            placeholder="Enter your Password"
                             onChange = {(event,newValue) => this.setState({password:newValue})}
                         />
                         <br/>
-                        <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                        <button label="Submit" onClick={(event) => this.handleClick(event)}/>
                     </div>
 
             )
         }
         else if(value === 2){
-            var localloginComponent=[];
             loginRole='teacher';
             localloginComponent.push(
 
                     <div>
                         <input
-                            hintText="Enter your College Rollno"
-                            floatingLabelText="Teacher Id"
+                            placeholder="Enter your College Roll no."
                             onChange = {(event,newValue) => this.setState({username:newValue})}
                         />
                         <br/>
                         <input
                             type="password"
-                            hintText="Enter your Password"
-                            floatingLabelText="Password"
+                            placeholder="Enter your Password"
                             onChange = {(event,newValue) => this.setState({password:newValue})}
                         />
                         <br/>
-                        <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                        <button label="Submit" onClick={(event) => this.handleClick(event)}/>
                     </div>
 
             )
@@ -195,8 +187,9 @@ class Login extends Component {
                     <div className="small-12 column">
                         <p>Login as:</p>
                         <select value={this.state.menuValue} onChange={(event,index,value)=>this.handleMenuChange(value)}>
-                            <option value={1} primaryText="Student" />
-                            <option value={2} primaryText="Teacher" />
+                            <option defaultValue>Select login..</option>
+                            <option value={1}>Student</option>
+                            <option value={2}>Teacher</option>
                         </select>
                     </div>
                 </div>
@@ -206,9 +199,5 @@ class Login extends Component {
         );
     }
 }
-
-const style = {
-    margin: 15,
-};
 
 export default Login;

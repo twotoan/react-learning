@@ -1,7 +1,6 @@
 // React Functionality
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-//import TransitionGroup from "react-transition-group/TransitionGroup";
 
 // Import abstracted components
 import AppHeader from './components/layout/AppHeader';
@@ -10,10 +9,6 @@ import About from './components/About';
 import Login from './components/login/Login';
 
 // Declarations for Routing
-// const firstChild = props => {
-//     const childrenArray = React.Children.toArray(props.children);
-//     return childrenArray[0] || null;
-// };
 // @TODO - abstract out UI elements into new components/consts and include them instead of dumping HTML in home const.
 const Home = () =>  (
     <div className="row">
