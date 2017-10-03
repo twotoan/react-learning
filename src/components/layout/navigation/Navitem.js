@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import Navitems from './Navitems';
+//import Tabs from './Navitems';
 
 export class Navitem extends Component {
     render(){
         return (
-            <div>
-                <li><a href={this.props.url}>{this.props.label}</a></li>
-            </div>
+            <li><a href={this.props.url}>{this.props.label}</a></li>
         );
     }
 }

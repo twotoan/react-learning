@@ -5,10 +5,10 @@ export class Tabs extends Component {
     render(){
         return (
             <nav>
-                <ul class="menu menu-centered">
+                <ul className="menu menu-centered">
                     {this.props.navList.map(function(navitem) {
                         return (
-                            <Navitem url={navitem.url} label={navitem.label} />
+                            <Navitem key={navitem.id} exact path={navitem.url} url={navitem.url} label={navitem.label} component={navitem.component} />
                         );
                     })}
                 </ul>
