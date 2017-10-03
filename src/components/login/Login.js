@@ -2,30 +2,37 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import UploadScreen from './UploadScreen';
 import UploadPage from './UploadPage';
-var apiBaseUrl = "http://localhost:4000/api/";
+let apiBaseUrl = "http://localhost:4000/api/";
 
 class Login extends Component {
     constructor(props){
         super(props);
-        var localloginComponent=[];
+        let localloginComponent=[];
         localloginComponent.push(
 
-                <div>
-                    <input
-                        aria-describedby="collegeRollNo"
-                        floatingLabelText="Student Id"
-                        onChange = {(event,newValue) => this.setState({username:newValue})}
-                    />
-                    <p id="collegeRollNo">Enter your College Rollno</p>
-                    <br/>
-                    <input
-                        type="password"
-                        hintText="Enter your Password"
-                        floatingLabelText="Password"
-                        onChange = {(event,newValue) => this.setState({password:newValue})}
-                    />
-                    <br/>
-                    <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                <div className="row">
+                    <div className="small-12 column">
+                        <span className="label primary">Student Id</span>
+                        <input
+                            type="number"
+                            placeholder="Student ID"
+                            aria-describedby="collegeRollNo"
+                            onChange = {(event,newValue) => this.setState({username:newValue})}
+                        />
+                        <p id="collegeRollNo">Enter your College Roll #</p>
+                        <br/>
+                        <span className="label primary">Password</span>
+                        <input
+                            placeholder="Password"
+                            type="password"
+                            aria-describedby="collegePassword"
+                            onChange = {(event,newValue) => this.setState({password:newValue})}
+                            required
+                        />
+                        <p id="collegePassword">Enter your Password</p>
+                        <br/>
+                        <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                    </div>
                 </div>
 
         )

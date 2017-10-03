@@ -30,6 +30,7 @@ const LoginPage = () => (
     </div>
 );
 
+// Default render using routes to load views
 export class App extends Component {
     render() {
         return(
