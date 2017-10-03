@@ -6,24 +6,28 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AppHeader from './components/layout/AppHeader';
 import AppFooter from './components/layout/AppFooter';
 import About from './components/About';
+import Login from './components/login/Login';
 
 // Import the CSS
 import './css/site.min.css';
 
 // Declarations for Routing
 const Home = () =>  (
-    <div id="container">
-        <div className="row">
-            <div className="small-12 column">
-                Hello World
-            </div>
+    <div className="row">
+        <div className="small-12 column">
+            Hello World
         </div>
     </div>
 );
 const AboutMe = () => (
-  <div>
-    <About />
-  </div>
+    <div>
+        <About />
+    </div>
+);
+const LoginPage = () => (
+    <div>
+        <Login />
+    </div>
 );
 
 export class App extends Component {
@@ -33,8 +37,11 @@ export class App extends Component {
                 <Router>
                     <div>
                         <AppHeader />
-                        <Route exact path="/" component={Home}/>
-                        <Route path="/about" component={AboutMe}/>
+                        <div className="content">
+                            <Route exact path="/" component={Home}/>
+                            <Route path="/about" component={AboutMe}/>
+                            <Route path="/login" component={LoginPage}/>
+                        </div>
                     </div>
                 </Router>
                 <AppFooter />
