@@ -23,10 +23,10 @@ class UploadScreen extends Component {
         var printcount;
         //set upload limit based on user role
         if(this.props.role){
-            if(this.props.role == 'student'){
+            if(this.props.role === 'student'){
                 printcount = 5;
             }
-            else if(this.props.role == 'teacher'){
+            else if(this.props.role === 'teacher'){
                 printcount =10;
             }
         }

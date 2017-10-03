@@ -11,7 +11,7 @@ export class AppFooter extends Component {
                     </div>
                     <div className="small-12 medium-6 large-6 column text-right">
                         <p>
-                            <a href="https://github.com/twotoan/react-learning" target="_blank">
+                            <a href="https://github.com/twotoan/react-learning" target="_blank" rel="noopener noreferrer">
                                 <i className="fa fa-2x fa-github"></i>
                                 View me on gitHub!
                             </a>

@@ -1,7 +1,7 @@
 // React Functionality
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import TransitionGroup from "react-transition-group/TransitionGroup";
+//import TransitionGroup from "react-transition-group/TransitionGroup";
 
 // Import abstracted components
 import AppHeader from './components/layout/AppHeader';
@@ -10,10 +10,11 @@ import About from './components/About';
 import Login from './components/login/Login';
 
 // Declarations for Routing
-const firstChild = props => {
-    const childrenArray = React.Children.toArray(props.children);
-    return childrenArray[0] || null;
-};
+// const firstChild = props => {
+//     const childrenArray = React.Children.toArray(props.children);
+//     return childrenArray[0] || null;
+// };
+// @TODO - abstract out UI elements into new components/consts and include them instead of dumping HTML in home const.
 const Home = () =>  (
     <div className="row">
         <div className="small-12 column">
@@ -32,7 +33,7 @@ const Home = () =>  (
                         <div className="card-divider">
                             <h3>Im a card!</h3>
                         </div>
-                        <img src="http://placehold.it/400x200" alt="Im a placeholder image"/>
+                        <img src="http://placehold.it/400x200" alt="Alt Text"/>
                         <div className="card-section">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quia!</p>
                         </div>
@@ -43,7 +44,7 @@ const Home = () =>  (
                         <div className="card-divider">
                             <h3>Im a card!</h3>
                         </div>
-                        <img src="http://placehold.it/400x200" alt="Im a placeholder image"/>
+                        <img src="http://placehold.it/400x200" alt="Alt Text"/>
                         <div className="card-section">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, mollitia!</p>
                         </div>
@@ -54,7 +55,7 @@ const Home = () =>  (
                         <div className="card-divider">
                             <h3>Im a card!</h3>
                         </div>
-                        <img src="http://placehold.it/400x200" alt="Im a placeholder image"/>
+                        <img src="http://placehold.it/400x200" alt="Alt Text"/>
                         <div className="card-section">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, dolorum?</p>
                         </div>
@@ -69,6 +70,8 @@ const AboutMe = () => (
         <About />
     </div>
 );
+
+// @TODO - fix the login area
 const LoginPage = () => (
     <div>
         <Login />

@@ -46,8 +46,8 @@ class Login extends Component {
     }
     componentWillMount(){
         // console.log("willmount prop values",this.props);
-        if(this.props.role != undefined){
-            if(this.props.role == 'student'){
+        if(this.props.role !== undefined){
+            if(this.props.role === 'student'){
                 console.log("in student componentWillMount");
                 var localloginComponent=[];
                 localloginComponent.push(
@@ -72,7 +72,7 @@ class Login extends Component {
                 )
                 this.setState({menuValue:1,loginComponent:localloginComponent,loginRole:'student'})
             }
-            else if(this.props.role == 'teacher'){
+            else if(this.props.role === 'teacher'){
                 console.log("in teacher componentWillMount");
                 var localloginComponent=[];
                 localloginComponent.push(
@@ -109,13 +109,13 @@ class Login extends Component {
         axios.post(apiBaseUrl+'login', payload)
             .then(function (response) {
                 console.log(response);
-                if(response.data.code == 200){
+                if(response.data.code === 200){
                     console.log("Login successfull");
                     var uploadScreen=[];
                     uploadScreen.push(<UploadPage appContext={self.props.appContext} role={self.state.loginRole}/>)
                     self.props.appContext.setState({loginPage:[],uploadScreen:uploadScreen})
                 }
-                else if(response.data.code == 204){
+                else if(response.data.code === 204){
                     console.log("Username password do not match");
                     alert(response.data.success)
                 }
@@ -131,7 +131,7 @@ class Login extends Component {
     handleMenuChange(value){
         console.log("menuvalue",value);
         var loginRole;
-        if(value==1){
+        if(value === 1){
             var localloginComponent=[];
             loginRole='student';
             localloginComponent.push(
@@ -155,7 +155,7 @@ class Login extends Component {
 
             )
         }
-        else if(value == 2){
+        else if(value === 2){
             var localloginComponent=[];
             loginRole='teacher';
             localloginComponent.push(
