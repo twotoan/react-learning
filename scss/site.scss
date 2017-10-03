@@ -2,6 +2,12 @@
 @import "framework/framework";
 @import "framework/xlarge";
 
+// Import Font Awesome Icons
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+// Settings
+@import "settings/_variables";
+
 // Layout
 @import "layout/header";
 @import "layout/layout";
