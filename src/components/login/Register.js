@@ -43,7 +43,7 @@ class Register extends Component {
                         });
                     }
                     else{
-                        console.log("some error ocurred",response.data.code);
+                        console.log("some error occurred",response.data.code);
                     }
                 })
                 .catch(function (error) {
@@ -69,36 +69,28 @@ class Register extends Component {
         return (
             <div>
                 <div>
-                    <div
-                        Classname="row"
-                        title="Register"
-                    />
                     <input
-                        hintText="Enter your First Name"
-                        floatingLabelText="First Name"
+                        placeholder="Enter your First Name"
                         onChange = {(event,newValue) => this.setState({first_name:newValue})}
                     />
                     <br/>
                     <input
-                        hintText="Enter your Last Name"
-                        floatingLabelText="Last Name"
+                        placeholder="Enter your Last Name"
                         onChange = {(event,newValue) => this.setState({last_name:newValue})}
                     />
                     <br/>
                     <input
-                        hintText={userhintText}
-                        floatingLabelText={userLabel}
+                        placeholder={userhintText}
                         onChange = {(event,newValue) => this.setState({email:newValue})}
                     />
                     <br/>
                     <input
                         type = "password"
-                        hintText="Enter your Password"
-                        floatingLabelText="Password"
+                        placeholder="Enter your Password"
                         onChange = {(event,newValue) => this.setState({password:newValue})}
                     />
                     <br/>
-                    <button label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event,this.props.role)}/>
+                    <button label="Submit" onClick={(event) => this.handleClick(event,this.props.role)}/>
                 </div>
 
             </div>
@@ -106,8 +98,5 @@ class Register extends Component {
     }
 }
 
-const style = {
-    margin: 15,
-};
 
 export default Register;

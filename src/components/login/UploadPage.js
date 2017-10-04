@@ -50,7 +50,7 @@ class App extends Component {
                     <div
                         className="row"
                         title="Printing Page"
-                        onLeftIconButtonTouchTap={(event) => this.toggleDrawer(event)}
+                        onClick={(event) => this.toggleDrawer(event)}
                     />
 
 
@@ -58,8 +58,9 @@ class App extends Component {
                         <li>
                             <div>
                                 User Profile
-                                <a href="#"><i className="fa fa-close" onClick={(event) => this.toggleDrawer(event)}
-                                >clear</i></a>
+                                <button>
+                                    <i className="fa fa-close" onClick={(event) => this.toggleDrawer(event)}>clear</i>
+                                </button>
                             </div>
                         </li>
                         <div>

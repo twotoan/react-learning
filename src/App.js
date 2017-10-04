@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AppHeader from './components/layout/AppHeader';
 import AppFooter from './components/layout/AppFooter';
 import About from './components/About';
-import Login from './components/login/Login';
+import Loginscreen from './components/login/Loginscreen';
 
 // Declarations for Routing
 // @TODO - abstract out UI elements into new components/consts and include them instead of dumping HTML in home const.
@@ -20,7 +20,8 @@ const Home = () =>  (
             </div>
             <div className="callout secondary">
                 <h2>This is a H2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos error ex fuga modi perspiciatis saepe tenetur, voluptas? Doloremque iste molestias nemo quasi repellat voluptate.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos error ex fuga modi
+                    perspiciatis saepe tenetur, voluptas? Doloremque iste molestias nemo quasi repellat voluptate.</p>
             </div>
             <div className="row">
                 <div className="small-12 medium-4 large-4 column">
@@ -69,7 +70,7 @@ const AboutMe = () => (
 // @TODO - fix the login area
 const LoginPage = () => (
     <div>
-        <Login />
+        <Loginscreen />
     </div>
 );
 
@@ -82,11 +83,6 @@ export class App extends Component {
                     <div>
                         <AppHeader />
                         <div className="content">
-                            {/*<Route exact path="/" children={({ match, ...rest }) => (*/}
-                                    {/*<TransitionGroup component={firstChild}>*/}
-                                        {/*{match && <Home {...rest} />}*/}
-                                    {/*</TransitionGroup>*/}
-                                {/*)}/>*/}
                             <Route exact path="/" component={Home}/>
                             <Route path="/about" component={AboutMe}/>
                             <Route path="/login" component={LoginPage}/>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import UploadScreen from './UploadScreen';
 import UploadPage from './UploadPage';
 let apiBaseUrl = "http://localhost:4000/api/";
 
@@ -36,7 +35,7 @@ class Login extends Component {
                     </div>
                 </div>
 
-        )
+        );
         this.state={
             username:'',
             password:'',
@@ -67,7 +66,7 @@ class Login extends Component {
                             <button label="Submit" onClick={(event) => this.handleClick(event)}/>
                         </div>
 
-                )
+                );
                 this.setState({menuValue:1,loginComponent:localloginComponent,loginRole:'student'})
             }
             else if(this.props.role === 'teacher'){
@@ -90,7 +89,7 @@ class Login extends Component {
                             <button label="Submit" onClick={(event) => this.handleClick(event)}/>
                         </div>
 
-                )
+                );
                 this.setState({menuValue:2,loginComponent:localloginComponent,loginRole:'teacher'})
             }
         }
