@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AppHeader from './components/layout/AppHeader';
 import AppFooter from './components/layout/AppFooter';
 import About from './components/About';
-import Loginscreen from './components/login/Loginscreen';
+import DbHome from './components/player-database/DbHome';
+//import Loginscreen from './components/login/Loginscreen';
 
 // Declarations for Routing
 // @TODO - abstract out UI elements into new components/consts and include them instead of dumping HTML in home const.
@@ -68,9 +69,14 @@ const AboutMe = () => (
 );
 
 // @TODO - fix the login area
-const LoginPage = () => (
+// const LoginPage = () => (
+//     <div>
+//         <Loginscreen />
+//     </div>
+// );
+const DbHomeP = () => (
     <div>
-        <Loginscreen />
+        <DbHome />
     </div>
 );
 
@@ -85,7 +91,8 @@ export class App extends Component {
                         <div className="content">
                             <Route exact path="/" component={Home}/>
                             <Route path="/about" component={AboutMe}/>
-                            <Route path="/login" component={LoginPage}/>
+                            <Route path="/database" component={DbHomeP}/>
+                            {/*<Route path="/login" component={LoginPage}/>*/}
                         </div>
                     </div>
                 </Router>

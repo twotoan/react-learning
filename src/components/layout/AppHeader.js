@@ -13,7 +13,8 @@ export class AppHeader extends Component {
                         <ul className="menu menu-centered">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
-                            <li><Link to="/login">Login</Link></li>
+                            <li><Link to="/database">Player Database</Link></li>
+                            {/*<li><Link to="/login">Login</Link></li>*/}
                         </ul>
                     </div>
                 </div>
