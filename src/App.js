@@ -11,7 +11,6 @@ import DbHome from './components/player-database/DbHome';
 //import Loginscreen from './components/login/Loginscreen';
 
 // Declarations for Routing
-// @TODO - abstract out UI elements into new components/consts and include them instead of dumping HTML in home const.
 const Home = () =>  (
     <div>
         <HomePage />
@@ -22,7 +21,6 @@ const AboutMe = () => (
         <About />
     </div>
 );
-
 // @TODO - fix the login area
 // const LoginPage = () => (
 //     <div>

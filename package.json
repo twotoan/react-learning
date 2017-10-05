@@ -12,7 +12,8 @@
     "font-awesome": "^4.7.0",
     "node-sass": "^4.5.3",
     "nodemon": "^1.12.1",
-    "foundation-sites": "^6.4.3"
+    "foundation-sites": "^6.4.3",
+    "hltv": "^2.2.3"
   },
   "scripts": {
     "start": "react-scripts start",

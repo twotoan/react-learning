@@ -6,11 +6,12 @@ let players = [
     {id: 2, name: "Flamie", age: "15", icon: "x", region: "EU"},
     {id: 3, name: "Seized", age: "15", icon: "x", region: "EU"},
     {id: 4, name: "Zeus", age: "15", icon: "x", region: "EU"},
-    {id: 5, name: "Tarik", age: "15", icon: "x", region: "NA"},
-    {id: 6, name: "Stewie2k", age: "15", icon: "x", region: "NA"},
-    {id: 7, name: "RUSH", age: "15", icon: "x", region: "NA"},
-    {id: 8, name: "Skadoodle", age: "15", icon: "x", region: "NA"},
-    {id: 9, name: "Autimatic", age: "15", icon: "x", region: "NA"}
+    {id: 5, name: "Edward", age: "15", icon: "x", region: "EU"},
+    {id: 6, name: "Tarik", age: "15", icon: "x", region: "NA"},
+    {id: 7, name: "Stewie2k", age: "15", icon: "x", region: "NA"},
+    {id: 8, name: "RUSH", age: "15", icon: "x", region: "NA"},
+    {id: 9, name: "Skadoodle", age: "15", icon: "x", region: "NA"},
+    {id: 10, name: "Autimatic", age: "15", icon: "x", region: "NA"}
 ];
 
 // TODO - Next thing I need to do is set the default state when someone visits the page (defaultView)
@@ -19,6 +20,7 @@ let players = [
 // TODO - Export the players array to a separate file and make comprehensive list of Tier 1 teams as a starter
 // TODO - Add all the icons for the teams - do this at home!
 // TODO - Verify and correct the data in the players array to  be up-to-date
+// TODO - Look at using the HLTV api from NPM?
 
 // Render the element and pass it the players info to be used as props.
 export class defaultView extends Component {
