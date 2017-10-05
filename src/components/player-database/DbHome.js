@@ -14,14 +14,6 @@ let players = [
     {id: 10, name: "Autimatic", age: "15", icon: "x", region: "NA"}
 ];
 
-// TODO - Next thing I need to do is set the default state when someone visits the page (defaultView)
-// TODO - Then I need to decided after that happens, what happens next
-// TODO - Make the results filterable - one filter to begin then multiple ways
-// TODO - Export the players array to a separate file and make comprehensive list of Tier 1 teams as a starter
-// TODO - Add all the icons for the teams - do this at home!
-// TODO - Verify and correct the data in the players array to  be up-to-date
-// TODO - Look at using the HLTV api from NPM?
-
 // Render the element and pass it the players info to be used as props.
 export class defaultView extends Component {
     render() {
