@@ -6,14 +6,22 @@ export class HomePage extends Component {
             <div className="row">
                 <div className="small-12 column">
                     <div className="callout primary">
-                        <h1>I am a H1 tag</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus esse exercitationem natus,
-                            nobis sed totam vitae. Eveniet expedita possimus ratione saepe ullam? Libero, nisi.</p>
+                        <h1>CSGO UI Experiment</h1>
+                        <p>For use while learning react. Plans are to port to React Native as well.</p>
                     </div>
                     <div className="callout secondary">
-                        <h2>This is a H2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos error ex fuga modi
-                            perspiciatis saepe tenetur, voluptas? Doloremque iste molestias nemo quasi repellat voluptate.</p>
+                        <h2>Aplication Structure</h2>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>
+                                Player Database
+                                <ul>
+                                    <li>Player List</li>
+                                    <li>Team List</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <div className="row">
                         <div className="small-12 medium-4 large-4 column">

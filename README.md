@@ -21,9 +21,10 @@
 * **TODO** - Then I need to decided after that happens, what happens next (DbHome.js)
 * **TODO** - Make the results filterable - one filter to begin then multiple ways (DbHome.js)
 * **TODO** - Export the players array to a separate file and make comprehensive list of Tier 1 teams as a starter (DbHome.js)
-* **TODO** - Add all the icons for the teams - do this at home! (DbHome.js)
+* **WIP** - Add all the icons for the teams - do this at home! (DbHome.js)
 * **TODO** - Verify and correct the data in the players array to  be up-to-date (DbHome.js)
 * **TODO** - Look at using the HLTV api from NPM? (Api.js)
 * **TODO** - Implement Unit Testing w/Jasmine (Application)
+* **TODO** - Paginate the player list. (DbHome.js)
 
 ## Changelog  
