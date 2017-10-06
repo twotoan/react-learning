@@ -4,7 +4,8 @@ footer {
   padding: 20px;
   a {
     color: $white;
-    i {
+    display: block;
+    span {
       display: block;
     }
   }

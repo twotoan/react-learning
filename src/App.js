@@ -8,6 +8,7 @@ import AppFooter from './components/layout/AppFooter';
 import HomePage from './components/HomePage';
 import About from './components/About';
 import DbHome from './components/player-database/DbHome';
+import DefaultView from './components/player-database/SortableListExample';
 //import Loginscreen from './components/login/Loginscreen';
 
 // Declarations for Routing
@@ -32,6 +33,11 @@ const DbHomeP = () => (
         <DbHome />
     </div>
 );
+const Sortable = () => (
+    <div>
+        <DefaultView />
+    </div>
+);
 
 // Default render using routes to load views
 export class App extends Component {
@@ -45,6 +51,7 @@ export class App extends Component {
                             <Route exact path="/" component={Home}/>
                             <Route path="/about" component={AboutMe}/>
                             <Route path="/database" component={DbHomeP}/>
+                            <Route path="/sortable" component={Sortable}/>
                             {/*<Route path="/login" component={LoginPage}/>*/}
                         </div>
                     </div>

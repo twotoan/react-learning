@@ -9,11 +9,11 @@ export class AppFooter extends Component {
                         <h2>Credits</h2>
                         <p>Copyright 2017 Matthew Davies</p>
                     </div>
-                    <div className="small-12 medium-6 large-6 column text-right">
+                    <div className="small-12 medium-2 large-2 column text-center">
                         <p>
                             <a href="https://github.com/twotoan/react-learning" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-2x fa-github"></i>
-                                View me on gitHub!
+                                <i className="fa fa-4x fa-github"></i>
+                                <span>View me on gitHub!</span>
                             </a>
                         </p>
                     </div>

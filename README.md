@@ -26,5 +26,6 @@
 * **TODO** - Look at using the HLTV api from NPM? (Api.js)
 * **TODO** - Implement Unit Testing w/Jasmine (Application)
 * **TODO** - Paginate the player list. (DbHome.js)
+* **TODO** - Long term - migrate foundation 6.3 to 6.4
 
 ## Changelog  

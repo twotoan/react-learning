@@ -17,11 +17,17 @@ let players = [
     { name: "ReltuC", age: "15", nationality: "NA", icon: "img/teams/.png", region: "NA", team: "CLG"},
     { name: "Koosta", age: "15", nationality: "NA", icon: "img/teams/.png", region: "NA", team: "CLG"},
     { name: "Rickeh", age: "15", nationality: "AU", icon: "img/teams/.png", region: "NA", team: "CLG"},
-    { name: "Friberg", age: "15", nationality: "SE", icon: "img/teams/.png", region: "NA", team: "CLG"},
-    { name: "Magiskboy", age: "15", nationality: "DN", icon: "img/teams/.png", region: "NA", team: "CLG"},
-    { name: "HS", age: "15", nationality: "EA", icon: "img/teams/.png", region: "NA", team: "CLG"},
-    { name: "Allu", age: "15", nationality: "FI", icon: "img/teams/.png", region: "NA", team: "CLG"},
-    { name: "Mixwell", age: "15", nationality: "ES", icon: "img/teams/.png", region: "NA", team: "CLG"}
+    { name: "Friberg", age: "15", nationality: "SE", icon: "img/teams/.png", region: "NA", team: "Optic"},
+    { name: "Magiskboy", age: "15", nationality: "DN", icon: "img/teams/.png", region: "NA", team: "Optic"},
+    { name: "HS", age: "15", nationality: "EA", icon: "img/teams/.png", region: "NA", team: "Optic"},
+    { name: "Allu", age: "15", nationality: "FI", icon: "img/teams/.png", region: "NA", team: "Optic"},
+    { name: "Mixwell", age: "15", nationality: "ES", icon: "img/teams/.png", region: "NA", team: "Optic"},
+    { name: "Device", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"},
+    { name: "Dupreeh", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"},
+    { name: "Xypex", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"},
+    { name: "Gla1ve", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"},
+    { name: "Kjaerbye", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"}
+
 ];
 
 // Render the element and pass it the players info to be used as props.
@@ -68,12 +74,11 @@ export class PlayerEntry extends Component {
         );
     }
 }
-
 export class PlayerList extends Component {
     render() {
         let playerArr = this.props.players;
-        let listItems = playerArr.map((newsObj, i) => {
-            return <PlayerEntry key={i} data={newsObj} />;
+        let listItems = playerArr.map((playerObj, i) => {
+            return <PlayerEntry key={i} data={playerObj} />;
         });
         return (
             <ul className="playerList">
@@ -82,5 +87,4 @@ export class PlayerList extends Component {
         );
     }
 }
-
 export default defaultView;
