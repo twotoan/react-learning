@@ -31,3 +31,22 @@
     }
   }
 }
+.form-wrapper {
+  border-radius: 6px;
+  border: 1px solid #1779ba;
+  margin-bottom: 15px;
+  input, select {
+    margin-bottom: 0;
+  }
+  .formHeading {
+    background: #1779ba;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 15px;
+    font-weight: bold;
+    color: $white;
+  }
+  .form {
+    padding: 15px;
+  }
+}

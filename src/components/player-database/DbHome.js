@@ -27,19 +27,10 @@ let players = [
     { name: "Xypex", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"},
     { name: "Gla1ve", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"},
     { name: "Kjaerbye", age: "15", nationality: "DN", icon: "img/teams/.png", region: "EU", team: "Astralis"}
-
 ];
 
 // Render the element and pass it the players info to be used as props.
 export class defaultView extends Component {
-    loadData() {
-        fetch('')
-            .then(response => response.json())
-            .then(data => {
-                this.setState({data: data })
-            })
-            .catch(err => console.error(this.props.url, err.toString()))
-    }
     render() {
         return(
             <div>
