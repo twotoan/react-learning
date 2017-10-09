@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 
 export class FilteredList extends Component {
-    constructor() {
-        super();
-        // Set the initial state
+    filterList = (event) => {
+       let updatedList = this.state.initialItems;
+        updatedList = updatedList.filter(function(item){
+            return item.toLowerCase().search(
+                event.target.value.toLowerCase()) !== -1;
+        });
+        this.setState({items: updatedList});
+    }
+    constructor(props) {
+        super(props);
         this.state = {
             initialItems: [
                 "Apples",
@@ -19,20 +26,9 @@ export class FilteredList extends Component {
                 "Yogurt"
             ],
             items: []
-        };
-        this.filterList = this.filterList(this);
+        }
     }
-    //The search function
-    filterList(event) {
-        // let updatedList = this.state.initialItems;
-        // updatedList = updatedList.filter(function (item) {
-        //     return item.toLowerCase().search(
-        //         event.target.value.toLowerCase()) !== -1;
-        // });
-        // this.setState({items: updatedList});
-    }
-    // What happens when the component mounts (Set the itemlist as the value of initial items)
-    componentWillMount() {
+    componentWillMount(){
         this.setState({items: this.state.initialItems})
     }
     render(){
@@ -44,6 +40,7 @@ export class FilteredList extends Component {
         );
     }
 }
+
 export class List extends Component {
     render(){
         return (
@@ -57,11 +54,16 @@ export class List extends Component {
         )
     }
 }
+
 export class DefaultView extends Component {
     render() {
         return (
             <div>
-                <FilteredList/>
+                <div className="row">
+                    <div className="small-12 column">
+                        <FilteredList/>
+                    </div>
+                </div>
             </div>
         )
     }
