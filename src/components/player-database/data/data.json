@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "name": "Simple",
+      "age": "15",
+      "nationality": "UA",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Natus Vincere"
+    },
+    {
+      "name": "Flamie",
+      "age": "15",
+      "nationality": "RU",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Natus Vincere"
+    },
+    {
+      "name": "Seized",
+      "age": "15",
+      "nationality": "RU",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Natus Vincere"
+    },
+    {
+      "name": "Zeus",
+      "age": "15",
+      "nationality": "RU",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Natus Vincere"
+    },
+    {
+      "name": "Edward",
+      "age": "15",
+      "nationality": "UA",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Natus Vincere"
+    },
+    {
+      "name": "Tarik",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/c9.png",
+      "region": "NA",
+      "team": "Cloud9"
+    },
+    {
+      "name": "Stewie2k",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/c9.png",
+      "region": "NA",
+      "team": "Cloud9"
+    },
+    {
+      "name": "RUSH",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/c9.png",
+      "region": "NA",
+      "team": "Cloud9"
+    },
+    {
+      "name": "Skadoodle",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/c9.png",
+      "region": "NA",
+      "team": "Cloud9"
+    },
+    {
+      "name": "Autimatic",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/c9.png",
+      "region": "NA",
+      "team": "Cloud9"
+    },
+    {
+      "name": "FNS",
+      "age": "15",
+      "nationality": "CD",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "CLG"
+    },
+    {
+      "name": "nahtE",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "CLG"
+    },
+    {
+      "name": "ReltuC",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "CLG"
+    },
+    {
+      "name": "Koosta",
+      "age": "15",
+      "nationality": "NA",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "CLG"
+    },
+    {
+      "name": "Rickeh",
+      "age": "15",
+      "nationality": "AU",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "CLG"
+    },
+    {
+      "name": "Friberg",
+      "age": "15",
+      "nationality": "SE",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "Optic"
+    },
+    {
+      "name": "Magiskboy",
+      "age": "15",
+      "nationality": "DN",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "Optic"
+    },
+    {
+      "name": "HS",
+      "age": "15",
+      "nationality": "EA",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "Optic"
+    },
+    {
+      "name": "Allu",
+      "age": "15",
+      "nationality": "FI",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "Optic"
+    },
+    {
+      "name": "Mixwell",
+      "age": "15",
+      "nationality": "ES",
+      "icon": "img/teams/.png",
+      "region": "NA",
+      "team": "Optic"
+    },
+    {
+      "name": "Device",
+      "age": "15",
+      "nationality": "DN",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Astralis"
+    },
+    {
+      "name": "Dupreeh",
+      "age": "15",
+      "nationality": "DN",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Astralis"
+    },
+    {
+      "name": "Xypex",
+      "age": "15",
+      "nationality": "DN",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Astralis"
+    },
+    {
+      "name": "Gla1ve",
+      "age": "15",
+      "nationality": "DN",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Astralis"
+    },
+    {
+      "name": "Kjaerbye",
+      "age": "15",
+      "nationality": "DN",
+      "icon": "img/teams/.png",
+      "region": "EU",
+      "team": "Astralis"
+    }
+  ]
+}

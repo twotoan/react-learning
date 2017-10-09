@@ -32,6 +32,14 @@ let players = [
 
 // Render the element and pass it the players info to be used as props.
 export class defaultView extends Component {
+    loadData() {
+        fetch('')
+            .then(response => response.json())
+            .then(data => {
+                this.setState({data: data })
+            })
+            .catch(err => console.error(this.props.url, err.toString()))
+    }
     render() {
         return(
             <div>
