@@ -9,6 +9,7 @@ import HomePage from './components/HomePage';
 import About from './components/About';
 import DbHome from './components/player-database/DbHome';
 import DefaultView from './components/player-database/SortableListExample';
+import Filters from './components/player-database/MultipleFilters';
 //import Loginscreen from './components/login/Loginscreen';
 
 // Declarations for Routing
@@ -38,6 +39,11 @@ const Sortable = () => (
         <DefaultView />
     </div>
 );
+const FiltersP = () => (
+    <div>
+        <Filters />
+    </div>
+);
 
 // Default render using routes to load views
 export class App extends Component {
@@ -52,6 +58,7 @@ export class App extends Component {
                             <Route path="/about" component={AboutMe}/>
                             <Route path="/database" component={DbHomeP}/>
                             <Route path="/sortable" component={Sortable}/>
+                            <Route path="/filters" component={FiltersP}/>
                             {/*<Route path="/login" component={LoginPage}/>*/}
                         </div>
                     </div>

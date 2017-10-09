@@ -11,21 +11,21 @@ export class FilteredList extends Component {
         });
         this.setState({items: updatedList});
     };
+    // Need to figure out how to map all the JSON stuff to this state
     constructor(props) {
         super(props);
         this.state = {
             initialItems: [
-                "Apples",
-                "Broccoli",
-                "Chicken",
-                "Bacon",
-                "Eggs",
-                "Salmon",
-                "Granola",
-                "Bananas",
-                "Beer",
-                "Wine",
-                "Yogurt"
+                "Simple",
+                "Flamie",
+                "Seized",
+                "Zeus",
+                "Edward",
+                "Tarik",
+                "Stewie2k",
+                "Rush",
+                "Skadoodle",
+                "Autimatic"
             ],
             items: []
         }
@@ -46,18 +46,18 @@ export class FilteredList extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="large-4 column">
-                            <div className="form">
-                                <select>
-                                    <option value="" defaultValue>Search by..</option>
-                                    <option value="team">Team</option>
-                                    <option value="alias">Alias</option>
-                                    <option value="nationality">Nationality</option>
-                                    <option value="region">Region</option>
-                                    <option value="age">Age</option>
-                                </select>
-                            </div>
-                        </div>
+                        {/*<div className="large-4 column">*/}
+                            {/*<div className="form">*/}
+                                {/*<select>*/}
+                                    {/*<option value="" defaultValue>Search by..</option>*/}
+                                    {/*<option value="team">Team</option>*/}
+                                    {/*<option value="alias">Alias</option>*/}
+                                    {/*<option value="nationality">Nationality</option>*/}
+                                    {/*<option value="region">Region</option>*/}
+                                    {/*<option value="age">Age</option>*/}
+                                {/*</select>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
                         <div className="large-8 column">
                             <div className="form">
                                 <input type="text" placeholder="Search" onChange={this.filterList}/>
@@ -89,8 +89,18 @@ export class List extends Component {
             <div>
                 <ul className="playerList">
                     {
-                        this.props.items.map(function(item) {
-                            return <li key={item}>{item}</li>
+                        this.props.items.map(function(item, i) {
+                            return (
+                                <li key={i}>
+                                    <div className="row">
+                                        <div className="large-2 column">ICON</div>
+                                        <div className="large-3 column">{item}</div>
+                                        <div className="large-2 column">y</div>
+                                        <div className="large-2 column">z</div>
+                                        <div className="large-1 column">a</div>
+                                    </div>
+                                </li>
+                            )
                         })
                     }
                 </ul>
@@ -98,6 +108,7 @@ export class List extends Component {
         )
     }
 }
+
 export class DefaultView extends Component {
     render() {
         return (

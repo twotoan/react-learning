@@ -17,6 +17,7 @@ export class AppHeader extends Component {
                                 <Link to="/database">Player Database</Link>
                                 <ul>
                                     <li><Link to="/sortable">Sortable Example</Link></li>
+                                    <li><Link to="/filters">Multiple Filters</Link></li>
                                 </ul>
                             </li>
                         </ul>

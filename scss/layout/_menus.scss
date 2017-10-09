@@ -7,15 +7,21 @@
       transition: all, .5s, ease-in-out;
     }
   }
+  li:hover > a {
+    background: #1779ba;
+    color: white;
+    transition: all, .5s, ease-in-out;
+  }
   li {
     position: relative;
   }
-  li:hover ul li {
+  li:hover ul {
     display: block;
   }
-  ul li {
+  ul {
     display: none;
     position: absolute;
+    list-style-type: none;
     top: 38px;
     right: 0;
     a {
