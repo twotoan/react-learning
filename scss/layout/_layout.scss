@@ -10,15 +10,17 @@
   list-style-type: none;
   margin-left: 0;
   li {
-    background: none;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     border-top: 1px solid #ccc;
     cursor: pointer;
     padding: 10px;
     transition: all .5s ease-in-out;
-    .icon {
-      max-width: 25px;
+    &:nth-child(even) {
+      background: $ltBlue;
+    }
+    &:nth-child(odd) {
+      background: $ltGrey;
     }
     &:hover {
       background: #ccc;
@@ -28,6 +30,9 @@
       border-bottom: 1px solid #ccc;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
+    }
+    .icon, .region {
+      max-width: 25px;
     }
   }
 }
